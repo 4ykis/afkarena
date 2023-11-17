@@ -1,5 +1,5 @@
 {
-  "lightbearers": {
+  "lightbearer": {
     "rowan": {
       "name": "Rowan",
       "ascended": "None",
@@ -155,7 +155,7 @@
       "furniture": 0
     }
   },
-  "maulers": {
+  "mauler": {
     "brutus": {
       "name": "Brutus",
       "ascended": "None",
@@ -325,7 +325,7 @@
       "furniture": 0
     }
   },
-  "wilders": {
+  "wilder": {
     "nemora": {
       "name": "Nemora",
       "ascended": "None",
@@ -488,7 +488,7 @@
       "furniture": 0
     }
   },
-  "graveborns": {
+  "graveborn": {
     "grezhul": {
       "name": "Grezhul",
       "ascended": "None",
@@ -658,7 +658,7 @@
       "furniture": 0
     }
   },
-  "celestials": {
+  "celestial": {
     "athalia": {
       "name": "Athalia",
       "ascended": "None",
@@ -786,7 +786,7 @@
       "furniture": 0
     }
   },
-  "hypogeans": {
+  "hypogean": {
     "ezizh": {
       "name": "Ezizh",
       "ascended": "None",
