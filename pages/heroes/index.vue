@@ -2,27 +2,24 @@
   import factions from '~/assets/data/db/faction.json'
   import heroData from '~/assets/data/db/template.json'
 
-  console.log(heroData)
+  // console.log(heroData)
 </script>
 
 <template>
   <div class="container">
     <div class="form">
       <div class="form-main grid gap-3 mb-3">
-        <section class="form-section" v-for="(heroList, faction_id) in factions">
+        <section class="form-section grid" v-for="(heroList, faction_id) in factions">
           <Accordeon>
             <template v-slot:header>
-              <h3 class="form-section__title bg-bg flex items-center cursor-pointer rounded gap-2 px-2 py-2 mb-2" :data-bg="faction_id">
-                <img width="32" height="32" :src='`/images/factions/${faction_id}.png`' :alt="faction_id">
-                <span class="capitalize">
-                  {{ faction_id }}
-                </span>
-                <IconChevroneDown class="w-6 h-6 ml-auto" />
-              </h3>
+              <img width="32" height="32" :src='`/images/factions/${faction_id}.png`' :alt="faction_id">
+              <span class="capitalize text-xl">
+                {{ faction_id }}
+              </span>
             </template>
 
             <template  v-slot:content>
-              <div class="form-section__content grid gap-1" >
+              <div class="form-section__wrapper grid xl:grid-cols-2 gap-2">
                 <FormHero v-for="hero in heroList" :hero_id="hero" :faction_id="faction_id" :hero_data="heroData[faction_id][hero]" />
               </div>
             </template>

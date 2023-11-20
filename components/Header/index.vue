@@ -3,7 +3,7 @@
 
   const breakpoints = useBreakpoints(breakpointsTailwind)
 
-  const isMobile = breakpoints.smaller('md');
+  const isMobile = breakpoints.smallerOrEqual('md');
 
 </script>
 
@@ -20,8 +20,9 @@
         <HeaderSignup />
       </div>
     </div>
-
   </header>
+
+  <ModalAuthorization />
 </template>
 
 <style scoped lang="scss">
@@ -31,5 +32,6 @@
     top: 0;
     right: 0;
     width: 100%;
+    z-index: 999;
   }
 </style>

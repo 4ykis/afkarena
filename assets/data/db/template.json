@@ -661,10 +661,10 @@
   "celestial": {
     "athalia": {
       "name": "Athalia",
-      "ascended": "None",
-      "signature_item": 0,
-      "engrave": 0,
-      "furniture": 0
+      "ascended": "Ascended_5",
+      "signature_item": 30,
+      "engrave": 60,
+      "furniture": 3
     },
     "elijah-and-lailah": {
       "name": "Elijah & Lailah",

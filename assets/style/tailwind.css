@@ -12,24 +12,18 @@
 
 @layer components {
     .input {
-        @apply bg-bg text-txt px-2 leading-8 h-8 rounded border border-theme-dark
+        @apply bg-bg text-txt px-2 leading-8 h-10 rounded border border-theme-dark
         focus:outline-0 focus:border-theme hover:border-theme duration-200 w-full
     }
 
     .select {
-        @apply bg-bg text-txt px-1 leading-8 h-8 rounded border border-theme-dark sm:text-sm
+        @apply bg-bg text-txt px-1 leading-8 h-10 rounded border border-theme-dark text-sm
         focus:outline-0 focus:border-theme hover:border-theme duration-200 cursor-pointer w-full
     }
 
     .btn {
         @apply flex items-center justify-center h-10 bg-bg border border-theme-dark rounded
-        text-center text-txt duration-200 hover:text-theme-light;
-
-        box-shadow: 0 0 0 0 rgba(var(--color-theme-light) / 0.35);
-
-        &:hover {
-            box-shadow: 0 2px 5px 0 rgba(var(--color-theme-light) / 0.35);
-        }
+        text-center text-txt duration-200 cursor-pointer hover:text-theme-light hover:border-theme;
     }
 
     .nav-link {
