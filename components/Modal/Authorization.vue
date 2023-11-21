@@ -79,3 +79,7 @@
     </template>
   </Modal>
 </template>
+
+<style scoped>
+  
+</style>

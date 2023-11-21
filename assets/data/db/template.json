@@ -898,6 +898,13 @@
       "signature_item": 0,
       "engrave": 0,
       "furniture": 0
+    },
+    "lavatune": {
+      "name": "Lavatune",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0
     }
   },
   "dimensional": {

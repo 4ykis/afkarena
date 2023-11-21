@@ -17,8 +17,8 @@
         <slot name="header"></slot>
 
         <IconClose
-            @click.prevent="store.changeState(modalId)"
-            class="absolute right-2 top-2 w-8 h-8 ml-auto cursor-pointer hover:text-theme-light" />
+          @click.prevent="store.changeState(modalId)"
+          class="absolute right-2 top-2 w-8 h-8 ml-auto cursor-pointer hover:text-theme-light" />
       </div>
 
       <div class="modal__content px-4 py-4">
