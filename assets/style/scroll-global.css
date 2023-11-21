@@ -1,0 +1,28 @@
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+@media (min-width: 768px) {
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(var(--color-bg));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(var(--color-theme-dark));
+	border-radius: 2px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(var(--color-theme));
+}

@@ -3,34 +3,32 @@
 @tailwind utilities;
 
 @layer base {
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
+
 @layer components {
-    .input {
-        @apply bg-bg text-txt px-2 leading-8 h-10 rounded border border-theme-dark
-        focus:outline-0 focus:border-theme hover:border-theme duration-200 w-full
-    }
+  .input {
+    @apply bg-bg text-txt px-2 leading-8 h-10 rounded border border-theme-dark
+      focus:outline-0 focus:border-theme hover:border-theme duration-200 w-full
+  }
 
-    .select {
-        @apply bg-bg text-txt px-1 leading-8 h-10 rounded border border-theme-dark text-sm
-        focus:outline-0 focus:border-theme hover:border-theme duration-200 cursor-pointer w-full
-    }
+  .select {
+    @apply bg-bg text-txt px-1 leading-8 h-10 rounded border border-theme-dark text-sm
+      focus:outline-0 focus:border-theme hover:border-theme duration-200 cursor-pointer w-full
+  }
 
-    .btn {
-        @apply flex items-center justify-center h-10 bg-bg border border-theme-dark rounded
-        text-center text-txt duration-200 cursor-pointer hover:text-theme-light hover:border-theme;
-    }
+  .btn {
+    @apply flex items-center justify-center h-10 bg-bg border border-theme-dark rounded
+      text-center text-txt duration-200 cursor-pointer hover:text-theme-light hover:border-theme;
+  }
 
-    .nav-link {
-        @apply flex px-1 h-full items-center
-            text-txt font-semibold duration-200
-            hover:text-theme-light
-    }
-
+  .nav-link {
+    @apply flex px-1 h-full items-center text-txt font-semibold duration-200 hover:text-theme-light
+  }
 }
 

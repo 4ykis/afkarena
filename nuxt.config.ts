@@ -2,7 +2,8 @@
 
 import { resolve } from 'path'
 export default defineNuxtConfig({
-  ignorePrefix: "",
+	devtools: undefined,
+	ignorePrefix: "",
   modules: [
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
@@ -23,6 +24,9 @@ export default defineNuxtConfig({
   },
   postcss: {
     plugins: {
+	    'postcss-nested': {},
+	    'postcss-import': {},
+	    'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
     },
@@ -31,10 +35,14 @@ export default defineNuxtConfig({
     storesDirs: ['./stores/**'],
   },
   css: [
-      "~/assets/style/scss/main.scss"
+	  "~/assets/style/global.css",
+	  "~/assets/style/scroll-global.css",
   ],
+	plugins:[
+		"~/plugins/vee-validate.js"
+	],
   tailwindcss: {
     cssPath: '~/assets/style/tailwind.css',
     configPath: 'tailwind.config'
-  }
+  },
 })

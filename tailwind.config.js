@@ -17,6 +17,14 @@ export default {
       boxShadow: {
         btn: "0 0 4px 0 rgba(0, 173, 181, 0.5)"
       },
+
+	    zIndex: {
+				'999': '999',
+		    '1000': '1000',
+		    '1001': '1001',
+		    '1002': '1002',
+		    '1003': '1003',
+	    },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',

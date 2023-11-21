@@ -1,6 +1,6 @@
 <template>
   <nav class="nav hidden md:block">
-    <ul class="nav__list flex gap-2">
+    <ul class="nav-list flex gap-2">
       <li>
         <NuxtLink class="nav-link" to="/">Головна</NuxtLink>
       </li>

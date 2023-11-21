@@ -1,85 +1,110 @@
-
 <script setup>
-  const onSubmit = (val) => {
-    console.log('test', val);
+  const isRegister = ref(false);
+  const onSubmitRegister = (val) => {
+    console.log('register', val);
   }
 
-  const validateEmail = (val) => {
-    // if the field is empty
-    if (!val) {
-      return 'Це поле обов\'язкове';
-    }
-
-    // if the field is not a valid email
-    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-    if (!regex.test(val)) {
-      return 'Email має бути існуючим.';
-    }
-    // All is good
-    return true;
+  const onSubmitLogin = (val) => {
+    console.log('login', val);
   }
 
-  const validateName = (val) => {
-    // if the field is empty
-    if (!val) {
-      return 'Це поле обов\'язкове';
-    }
-
-    // All is good
-    return true;
-  }
-
-  const validatePassword = (val) => {
-    // if the field is empty
-    if (!val) {
-      return 'Це поле обов\'язкове';
-    }
-
-    if (val.length < 8) {
-      return 'Пароль має містити не менше 8 символів';
-    }
-
-    // All is good
-    return true;
+  const toggleModalContent = () => {
+    isRegister.value = !isRegister.value
   }
 </script>
 
 <template>
-  <Modal class="login" :modal-id="'authorization'" :size="'m'">
+  <Modal class="auth" :modal-id="'authorization'" :size="'s'">
     <template v-slot:header>
-      Вхід
+      <span v-if="!isRegister">Вхід</span>
+      <span v-if="isRegister">Реєстрація</span>
     </template>
 
     <template v-slot:content>
-      <VeeForm @submit="onSubmit" class="login__content grid gap-2">
-        <label class="login__field grid gap-1">
-          <p class="login__title ml-1">Email</p>
-          <VeeField class="input" name="email" type="email" :rules="validateEmail" />
-          <VeeErrorMessage name="email" />
-        </label>
-
-        <label class="login__field grid gap-1">
-          <p class="login__title ml-1">Name</p>
-          <VeeField class="input" name="name" type="name" :rules="validateName" />
+      <VeeForm @submit="onSubmitLogin" v-if="!isRegister" class="auth">
+        <label class="auth-field">
+          <p class="auth-title">Логін</p>
+          <VeeField
+              class="input auth-input"
+              name="auth"
+              type="name"
+              rules="required" />
           <VeeErrorMessage name="name" />
         </label>
 
-        <label class="login__field grid gap-1">
-          <p class="login__title ml-1">Password</p>
-          <VeeField class="input" name="password" type="password" :rules="validatePassword" />
+        <label class="auth-field">
+          <p class="auth-title">Пароль</p>
+          <VeeField
+            class="input auth-input"
+            name="password"
+            type="password"
+            rules="password" />
           <VeeErrorMessage name="password" />
         </label>
 
-        <button class="login__submit btn">Login</button>
-      </VeeForm>
-    </template>
+        <button class="auth-submit btn">Увійти</button>
 
-    <template v-slot:footer>
-      content
+        <a @click.prevent="toggleModalContent" class="auth-change-form">Ще немає акаунта?</a>
+      </VeeForm>
+
+      <VeeForm @submit="onSubmitRegister" v-if="isRegister" class="auth">
+        <label class="auth-field">
+          <p class="auth-title">Email</p>
+          <VeeField
+              class="input auth-input"
+              name="email"
+              type="email"
+              rules="email"
+          />
+          <VeeErrorMessage name="email" />
+        </label>
+
+        <label class="auth-field">
+          <p class="auth-title">Логін</p>
+          <VeeField
+              class="input auth-input"
+              name="auth"
+              type="name"
+              rules="required" />
+          <VeeErrorMessage name="name" />
+        </label>
+
+        <label class="auth-field">
+          <p class="auth-title">Пароль</p>
+          <VeeField
+              class="input auth-input"
+              name="password"
+              type="password"
+              rules="password" />
+          <VeeErrorMessage name="password" />
+        </label>
+
+        <button class="auth-submit btn">Зареєструватись</button>
+
+        <a @click.prevent="toggleModalContent" class="auth-change-form">Вже зареєстровані?</a>
+      </VeeForm>
     </template>
   </Modal>
 </template>
 
 <style scoped>
-  
+  .auth {
+    @apply flex flex-col justify-center items-center gap-2
+  }
+
+  .auth-field {
+    @apply relative grid gap-1 w-full max-w-xs
+  }
+
+  .auth-title {
+    @apply flex items-center pl-1;
+  }
+
+  .auth-submit {
+    @apply mt-2 max-w-xs w-full
+  }
+
+  .auth-change-form {
+    @apply text-sm mt-2 text-txt cursor-pointer hover:text-theme-light duration-200
+  }
 </style>

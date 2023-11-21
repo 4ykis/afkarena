@@ -13,7 +13,7 @@
           <Accordeon>
             <template v-slot:header>
               <img width="32" height="32" :src='`/images/factions/${faction_id}.png`' :alt="faction_id">
-              <span class="capitalize text-xl">
+              <span class="capitalize text-xl duration-200">
                 {{ faction_id }}
               </span>
             </template>
@@ -29,9 +29,14 @@
 
       <div class="form-footer flex items-center gap-2 justify-end">
 <!--    <button class="btn cursor-pointer min-w-[120px]" @click.prevent="showModal">change ID</button>-->
-        <input class="btn cursor-pointer min-w-[120px]" type="reset" value="Скинути">
-        <input class="btn cursor-pointer min-w-[220px]" type="submit" value="Зберегти">
+        <input class="btn min-w-[120px]" type="reset" value="Скинути">
+        <input class="btn min-w-[220px]" type="submit" value="Зберегти">
       </div>
     </div>
   </div>
 </template>
+
+
+<style scoped>
+
+</style>

@@ -1,10 +1,9 @@
 <script setup>
   const store = useModalStore()
-
-  console.log(store.modals['authorization'])
-
+  const stopBodyScroll = useUtils().stopBodyScroll
   const openModal = () => {
-    store.changeState('authorization')
+    store.changeState('authorization');
+    stopBodyScroll()
   }
 </script>
 

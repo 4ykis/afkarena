@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <nav class="nav bg-bg px-3 py-2 md:hidden" :class="{'is-open': isNavOpen}">
-    <ul class="nav__list flex flex-col items-center h-full text-xl justify-center gap-4">
+  <nav class="nav" :class="{'is-open': isNavOpen}">
+    <ul class="nav-list">
       <li>
         <NuxtLink @click="isNavOpen = false" class="nav-link" to="/">Головна</NuxtLink>
       </li>
@@ -18,7 +18,7 @@
       <!--        <NuxtLink class="nav-link" to="/tree">Support</NuxtLink>-->
       <!--      </li>-->
       <li>
-        <NuxtLink @click="isNavOpen = false" target="_blank" class="nav-link gap-1" to="https://t.me/afkarenaua">
+        <NuxtLink @click="isNavOpen = false" target="_blank" class="nav-link" to="https://t.me/afkarenaua">
           <IconTelegramLogo class="w-7 h-7 text-[#2AABEE]"/>
           Telegram
         </NuxtLink>
@@ -29,24 +29,20 @@
 
 <style scoped lang="scss">
   nav {
-    position: fixed;
-    inset: 48px 0 36px;
-    z-index: 1000;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s;
+    @apply fixed top-[48px] bottom-[36px] left-0 right-0 z-1000;
+    @apply opacity-0 pointer-events-none duration-200;
+    @apply bg-bg px-3 py-2 md:hidden;
 
     &.is-open {
-      opacity: 1;
-      pointer-events: all;
+      @apply opacity-100 pointer-events-auto;
     }
   }
 
+  .nav-list {
+    @apply flex flex-col items-center h-full text-xl justify-center gap-4;
+  }
+
   .nav-link {
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 50px;
+    @apply uppercase content-center items-center w-full min-h-[50px] gap-1;
   }
 </style>

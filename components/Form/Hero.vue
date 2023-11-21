@@ -1,6 +1,6 @@
 <script setup>
  const props = defineProps(['hero_id', 'faction_id', 'hero_data']);
- const bgClass = () => `bg-faction-${props.faction_id}`;
+ const bgClass = () => `hero-${props.faction_id}`;
 
  const ascendedList = [
    "None",
@@ -37,20 +37,17 @@
 </script>
 
 <template>
-  <div :class="bgClass()" class="hero grid px-2 py-2 rounded gap-2 md:items-center">
-    <div class="hero__image">
+  <div :class="bgClass()" class="hero">
+    <div class="hero-image">
       <img :src="`images/heroes/${hero_data.name}_Icon.jpg`" width="72" height="72" alt="">
     </div>
 
-    <p class="hero__name text-2xl md:text-xl ml-4 md:ml-0">
+    <p class="hero-name">
       {{hero_data.name}}
     </p>
 
-    <div
-      class="hero__content grid gap-1 grid-flow-row
-      md:grid-cols-[160px_1fr_1fr_1fr]"
-    >
-      <div class="hero__select">
+    <div class="hero-content">
+      <div class="hero-select">
         <select class="select" :name="`${hero_id}-frame`" :id="`${hero_id}-frame`">
           <option v-for="frame in ascendedList" value="frame" :selected="isCurrentFrame(frame)">
             {{ changeToStar(frame) }}
@@ -58,7 +55,7 @@
         </select>
       </div>
 
-      <div class="hero__field hero__field--si flex gap-1">
+      <div class="hero-field hero--si">
         <FormHeroField
           :id="hero_id"
           :prefix="'si'"
@@ -67,7 +64,7 @@
         />
       </div>
 
-      <div class="hero__field hero__field--furn flex gap-1">
+      <div class="hero-field hero--furn">
         <FormHeroField
           :id="hero_id"
           :prefix="'furniture'"
@@ -76,7 +73,7 @@
         />
       </div>
 
-      <div class="hero__field hero__field--engrave flex gap-1">
+      <div class="hero-field hero--engrave">
         <FormHeroField
           :id="hero_id"
           :prefix="'engrave'"
@@ -89,9 +86,9 @@
 </template>
 
 <style scoped lang="scss">
-
   .hero {
-    grid-template-columns: 72px 1fr;
+    @apply grid px-2 py-2 rounded gap-2 md:items-center grid-cols-[72px_1fr];
+
     grid-template-areas:
       "img title"
       "form form";
@@ -102,17 +99,54 @@
         "img form";
     }
 
-    &__image {
+    &-image {
       grid-area: img;
     }
 
-    &__name {
+    &-name {
+      @apply text-2xl md:text-xl ml-4 md:ml-0;
+
       grid-area: title;
       align-self: center;
     }
 
-    &__content {
+    &-content {
+      @apply grid gap-1 grid-flow-row md:grid-cols-[160px_1fr_1fr_1fr];
+
       grid-area: form;
     }
+
+    &-field {
+      @apply flex gap-1;
+    }
+  }
+
+  // needed because of dynamic classes and issue with Tailwind
+  .hero-lightbearer {
+    @apply bg-faction-lightbearer;
+  }
+
+  .hero-wilder {
+    @apply bg-faction-wilder;
+  }
+
+  .hero-mauler {
+    @apply bg-faction-mauler;
+  }
+
+  .hero-graveborn {
+    @apply bg-faction-graveborn;
+  }
+
+  .hero-hypogean {
+    @apply bg-faction-hypogean;
+  }
+
+  .hero-celestial {
+    @apply bg-faction-celestial;
+  }
+
+  .hero-dimensional {
+    @apply bg-faction-dimensional;
   }
 </style>
