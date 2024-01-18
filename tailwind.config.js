@@ -9,15 +9,28 @@ export default {
     "./error.vue",
   ],
   theme: {
+		fontFamily: {
+			'sans': ['Spiegel', 'ui-sans-serif', 'system-ui', 'Roboto', 'sans-serif'],
+			'serif': ['BeaufortForLol', 'ui-serif', 'Georgia', 'serif'],
+		},
+	  letterSpacing: {
+			normal: '0',
+		  wide: '.01em',
+		  wider: '.02em',
+		  widest: '.03em'
+	  },
     container: {
       center: true,
       padding: '0.75rem'
     },
     extend: {
+	    transitionProperty: {
+		    'border': 'border'
+	    },
       boxShadow: {
-        btn: "0 0 4px 0 rgba(0, 173, 181, 0.5)"
+        btn: "0 0 4px 0 rgba(0, 173, 181, 0.5)",
+        btnxl: "0 0 8px 0 rgba(0, 173, 181, 0.5)"
       },
-
 	    zIndex: {
 				'999': '999',
 		    '1000': '1000',

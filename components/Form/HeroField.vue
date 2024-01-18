@@ -1,56 +1,65 @@
 <script setup>
-  const props = defineProps(['id', 'prefix', 'val', 'btnVal']);
-  import { onClickOutside, breakpointsTailwind, useBreakpoints } from '@vueuse/core'
+  import { onClickOutside, breakpointsTailwind, useBreakpoints } from "@vueuse/core";
 
-  const breakpoints = useBreakpoints(breakpointsTailwind);
+  const emit = defineEmits(['setVal']);
+  const prop = defineProps(['veebind', 'fieldName', 'val', 'btnsArr'])
+  const $inp = ref(prop.val || 0)
+
+  const breakpoints = useBreakpoints(breakpointsTailwind)
   const isMobile = breakpoints.smallerOrEqual('md');
-  const field = ref(props.val || '0');
+
   const buttonContainer = ref(null);
   const showButtons = ref(false);
+  const toggleButtons = () => {showButtons.value = !showButtons.value}
+  onClickOutside(buttonContainer, () => showButtons.value = false);
 
-  // const validateField = () => {
-  //   let val = field.value;
-  //   val = (val < 0) ? 0 : val;
-  //   val = (val > props.values[props.values.length - 1]) ? props.values[props.values.length - 1] : val
-  //
-  //   field.value = val;
-  // }
+  const validateField = () => {
+    const value = $inp.value;
+    const max = prop.btnsArr[prop.btnsArr.length];
 
-  const toggleButtons = () => showButtons.value = !showButtons.value
-
-  onClickOutside(buttonContainer, toggleButtons);
-
-  const setValue = (val) => {
-    field.value = val;
-    toggleButtons()
+    if (+value < 0) {
+      emit('setVal', prop.fieldName, 0);
+    } else if (+value > +max) {
+      emit('setVal', prop.fieldName, max);
+    }
   }
 
+  const setValue = (val) => {
+    emit('setVal', prop.fieldName, val);
+    showButtons.value = false
+  }
 </script>
 
 <template>
-  <input
-    type="text"
-    class="input flex-grow"
-    v-model.number="field"
-    :name="`${id}-${prefix}`"
-    :id="`${id}-${prefix}`"
-  >
-  <!--    @keyup="validateField()"-->
-  <div class="field-buttons">
-    <div class="field-buttons-toggle btn min-w-[2.5rem]" @click="toggleButtons"  v-if="!isMobile">...</div>
-    <div class="field-buttons-wrapper flex gap-1" v-if="isMobile || showButtons" ref="buttonContainer">
-      <button
-        v-for="btn in btnVal"
-        class="btn w-[2.5rem]"
-        @click.prevent="setValue(btn)"
-      >
-        {{ btn }}
-      </button>
+  <div class="flex gap-1">
+    <input class="input"
+           v-model="$inp"
+           v-bind="veebind"
+           @input="validateField"
+           @blur="validateField"
+           @change="validateField"
+    />
+
+    <div class="field-buttons">
+      <div class="field-buttons-toggle btn min-w-[2.5rem]"
+           @click="toggleButtons" v-if="!isMobile">...</div>
+      <div class="field-buttons-wrapper flex gap-1" v-show="isMobile || showButtons" ref="buttonContainer">
+        <button
+            v-for="btn in btnsArr"
+            type="button"
+            class="btn w-[2.5rem]"
+            @click.prevent="setValue(btn)">
+          {{ btn }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+  .input {
+    @apply min-w-[100px]
+  }
   .field-buttons {
     @apply flex min-w-[172px] content-center relative md:min-w-[2.5rem]
   }

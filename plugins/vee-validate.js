@@ -41,14 +41,12 @@ export default defineNuxtPlugin(nuxtApp => {
 			return 'Пароль повинен містити не менше 8 символів';
 		}
 
-		if (value.length < 8) {
-			return 'Пароль повинен містити не менше 8 символів';
-		}
-		const regex = /^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$/;
+		const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/g;
 		if (!regex.test(value)) {
-			return 'Пароль повинен містити цифри і літери';
+			return 'Пароль повинен містити цифру та велику та малу літеру.';
 		}
 
 		return true;
 	})
+
 })

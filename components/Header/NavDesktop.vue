@@ -1,12 +1,12 @@
 <template>
   <nav class="nav hidden md:block">
     <ul class="nav-list flex gap-2">
-      <li>
-        <NuxtLink class="nav-link" to="/">Головна</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink class="nav-link" to="/heroes">Герої</NuxtLink>
-      </li>
+<!--      <li>-->
+<!--        <NuxtLink class="nav-link" to="/">Головна</NuxtLink>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <NuxtLink class="nav-link" to="/heroes">Герої</NuxtLink>-->
+<!--      </li>-->
 <!--      <li>-->
 <!--        <NuxtLink class="nav-link" to="/heroes">Beasts</NuxtLink>-->
 <!--      </li>-->

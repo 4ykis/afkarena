@@ -14,7 +14,7 @@
       <IconChevroneDown class="w-6 h-6 ml-auto duration-200" :class="{'rotate-180' : isOpenAccordeon}" />
     </div>
 
-    <div class="accordeon-content" v-if="isOpenAccordeon">
+    <div class="accordeon-content" v-show="isOpenAccordeon">
       <slot name="content" />
     </div>
   </div>

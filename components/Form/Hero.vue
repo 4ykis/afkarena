@@ -1,88 +1,67 @@
 <script setup>
- const props = defineProps(['hero_id', 'faction_id', 'hero_data']);
- const bgClass = () => `hero-${props.faction_id}`;
+  const props = defineProps(['modalId', 'size', 'onClose']);
+  const ascendedList = [
+    "None",
+    "Elite",
+    "Elite+",
+    "Legendary",
+    "Legendary+",
+    "Mythical",
+    "Mythical+",
+    "Ascended",
+    "Ascended_1",
+    "Ascended_2",
+    "Ascended_3",
+    "Ascended_4",
+    "Ascended_5",
+  ]
 
- const ascendedList = [
-   "None",
-   "Elite",
-   "Elite+",
-   "Legendary",
-   "Legendary+",
-   "Mythical",
-   "Mythical+",
-   "Ascended",
-   "Ascended_1",
-   "Ascended_2",
-   "Ascended_3",
-   "Ascended_4",
-   "Ascended_5",
- ]
+  const changeToStar = (frame) => {
+    let str = frame.split('_');
+    let res = str[0];
 
- const isCurrentFrame = (frame) => props.hero_data.ascended === frame;
+    if (str[1]) {
+      res += ' '
+      for(let i = 0; i < str[1]; i++) {
+        res += '★'
+      }
+    }
 
- const changeToStar = (frame) => {
-   let str = frame.split('_');
-   let res = str[0];
-
-   if (str[1]) {
-     res += ' '
-     for(let i = 0; i < str[1]; i++) {
-       res += '★'
-     }
-   }
-
-   return res;
- }
+    return res;
+  }
 
 </script>
 
 <template>
-  <div :class="bgClass()" class="hero">
+  <div>
     <div class="hero-image">
-      <img :src="`images/heroes/${hero_data.name}_Icon.jpg`" width="72" height="72" alt="">
+      <slot name="image" />
     </div>
 
     <p class="hero-name">
-      {{hero_data.name}}
+      <slot name="name" />
     </p>
 
     <div class="hero-content">
       <div class="hero-select">
-        <select class="select" :name="`${hero_id}-frame`" :id="`${hero_id}-frame`">
-          <option v-for="frame in ascendedList" value="frame" :selected="isCurrentFrame(frame)">
-            {{ changeToStar(frame) }}
-          </option>
-        </select>
+        <slot name="ascended" :list="ascendedList" :toStar="changeToStar" />
       </div>
 
-      <div class="hero-field hero--si">
-        <FormHeroField
-          :id="hero_id"
-          :prefix="'si'"
-          :val="hero_data.signature_item"
-          :btnVal="[10, 20, 30, 40]"
-        />
+      <div class="hero-si">
+        <slot name="signatureItem"></slot>
       </div>
 
-      <div class="hero-field hero--furn">
-        <FormHeroField
-          :id="hero_id"
-          :prefix="'furniture'"
-          :val="hero_data.furniture"
-          :btnVal="[3, 9, 36]"
-        />
+      <div class="hero-furniture">
+        <slot name="furniture"></slot>
       </div>
 
-      <div class="hero-field hero--engrave">
-        <FormHeroField
-          :id="hero_id"
-          :prefix="'engrave'"
-          :val="hero_data.engrave"
-          :btnVal="[30, 60, 80, 100]"
-        />
+      <div class="hero-engrave">
+        <slot name="engrave"></slot>
       </div>
     </div>
+
   </div>
+
 </template>
 
 <style scoped lang="scss">
@@ -111,7 +90,7 @@
     }
 
     &-content {
-      @apply grid gap-1 grid-flow-row md:grid-cols-[160px_1fr_1fr_1fr];
+      @apply grid gap-1 grid-flow-row md:grid-cols-[180px_1fr_1fr_1fr];
 
       grid-area: form;
     }
