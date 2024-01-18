@@ -1,0 +1,1216 @@
+{
+  "lightbearer": {
+    "rowan": {
+      "name": "Rowan",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "estrilda": {
+      "name": "Estrilda",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "raine": {
+      "name": "Raine",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "fawkes": {
+      "name": "Fawkes",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "lucius": {
+      "name": "Lucius",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "thane": {
+      "name": "Thane",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "hendrik": {
+      "name": "Hendrik",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "gwyneth": {
+      "name": "Gwyneth",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "rosaline": {
+      "name": "Rosaline",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "cecilia": {
+      "name": "Cecilia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "rigby": {
+      "name": "Rigby",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "eluard": {
+      "name": "Eluard",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "peggy": {
+      "name": "Peggy",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "walker": {
+      "name": "Walker",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "morrow": {
+      "name": "Morrow",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "scarlet": {
+      "name": "Scarlet",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "thane_awakened": {
+      "name": "Thane_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "sonja": {
+      "name": "Sonja",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "palmer": {
+      "name": "Palmer",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "belinda_awakened": {
+      "name": "Belinda_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "ginneas": {
+      "name": "Ginneas",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "jerome": {
+      "name": "Jerome",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    }
+  },
+  "mauler": {
+    "brutus": {
+      "name": "Brutus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "khasos": {
+      "name": "Khasos",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "vurk": {
+      "name": "Vurk",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "numisu": {
+      "name": "Numisu",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "skreg": {
+      "name": "Skreg",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "warek": {
+      "name": "Warek",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "antandra": {
+      "name": "Antandra",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "safiya": {
+      "name": "Safiya",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "satrana": {
+      "name": "Satrana",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "tidus": {
+      "name": "Tidus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "drez": {
+      "name": "Drez",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "skriath": {
+      "name": "Skriath",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "anoki": {
+      "name": "Anoki",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "kren": {
+      "name": "Kren",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "thali": {
+      "name": "Thali",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "granit": {
+      "name": "Granit",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "thesku": {
+      "name": "Thesku",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "alaro": {
+      "name": "Alaro",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "anasta": {
+      "name": "Anasta",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "brutus_awakened": {
+      "name": "Brutus_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "salaki": {
+      "name": "Salaki",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "crassio": {
+      "name": "Crassio",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "safiya_awakened": {
+      "name": "Safiya_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "naroko": {
+      "name": "Naroko",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "vika": {
+      "name": "Vika",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    }
+  },
+  "wilder": {
+    "nemora": {
+      "name": "Nemora",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "kaz": {
+      "name": "Kaz",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "lyca": {
+      "name": "Lyca",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "tasi": {
+      "name": "Tasi",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "ulmus": {
+      "name": "Ulmus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "seirus": {
+      "name": "Seirus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "eironn": {
+      "name": "Eironn",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "gorvo": {
+      "name": "Gorvo",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "lorsan": {
+      "name": "Lorsan",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "saurus": {
+      "name": "Saurus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "solise": {
+      "name": "Solise",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "pippa": {
+      "name": "Pippa",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "respen": {
+      "name": "Respen",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "raku": {
+      "name": "Raku",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "mishka": {
+      "name": "Mishka",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "astar": {
+      "name": "Astar",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "oku": {
+      "name": "Oku",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "eorin": {
+      "name": "Eorin",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "solise_awakened": {
+      "name": "Solise_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "nevanthi": {
+      "name": "Nevanthi",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "tamrus": {
+      "name": "Tamrus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "trishea": {
+      "name": "Trishea",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "lyca_awakened": {
+      "name": "Lyca_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    }
+  },
+  "graveborn": {
+    "grezhul": {
+      "name": "Grezhul",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "shemira": {
+      "name": "Shemira",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "thoran": {
+      "name": "Thoran",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "isabella": {
+      "name": "Isabella",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "nara": {
+      "name": "Nara",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "ferael": {
+      "name": "Ferael",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "baden": {
+      "name": "Baden",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "kelthur": {
+      "name": "Kelthur",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "silas": {
+      "name": "Silas",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "oden": {
+      "name": "Oden",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "izold": {
+      "name": "Izold",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "torne": {
+      "name": "Torne",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "daimon": {
+      "name": "Daimon",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "theowyn": {
+      "name": "Theowyn",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "desira": {
+      "name": "Desira",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "hodgkin": {
+      "name": "Hodgkin",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "treznor": {
+      "name": "Treznor",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "fane": {
+      "name": "Fane",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "kalene": {
+      "name": "Kalene",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "baden_awakened": {
+      "name": "Baden_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "edwin": {
+      "name": "Edwin",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "ivan": {
+      "name": "Ivan",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    },
+    "shemira_awakened": {
+      "name": "Shemira_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "lady-simona": {
+      "name": "Lady Simona",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": false
+    }
+  },
+  "celestial": {
+    "athalia": {
+      "name": "Athalia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "elijah-and-lailah": {
+      "name": "Elijah & Lailah",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "orthros": {
+      "name": "Orthros",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "talene": {
+      "name": "Talene",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "wu-kong": {
+      "name": "Wu Kong",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "flora": {
+      "name": "Flora",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "zaphrael": {
+      "name": "Zaphrael",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "alna": {
+      "name": "Alna",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "morael": {
+      "name": "Morael",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "titus": {
+      "name": "Titus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "haelus": {
+      "name": "Haelus",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "talene_awakened": {
+      "name": "Talene_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "audrae": {
+      "name": "Audrae",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "tarnos": {
+      "name": "Tarnos",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "veithael": {
+      "name": "Veithael",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "athalia_awakened": {
+      "name": "Athalia_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "daemia": {
+      "name": "Daemia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "liberta": {
+      "name": "Liberta",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "gavus_awakened": {
+      "name": "Gavus_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    }
+  },
+  "hypogean": {
+    "ezizh": {
+      "name": "Ezizh",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "mehira": {
+      "name": "Mehira",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "zolrath": {
+      "name": "Zolrath",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "khazard": {
+      "name": "Khazard",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "mezoth": {
+      "name": "Mezoth",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "lucretia": {
+      "name": "Lucretia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "mortas": {
+      "name": "Mortas",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "leofric": {
+      "name": "Leofric",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "zikis": {
+      "name": "Zikis",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "framton": {
+      "name": "Framton",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "ezizh_awakened": {
+      "name": "Ezizh_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "vyloris": {
+      "name": "Vyloris",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "canisa-and-ruke": {
+      "name": "Canisa & Ruke",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "olgath": {
+      "name": "Olgath",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "maetria_awakened": {
+      "name": "Maetria_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "lucilla": {
+      "name": "Lucilla",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "lavatune": {
+      "name": "Lavatune",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "eugene_awakened": {
+      "name": "Eugene_Awakened",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    }
+  },
+  "dimensional": {
+    "nakoruru": {
+      "name": "Nakoruru",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "arthur": {
+      "name": "Arthur",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "ukyo": {
+      "name": "Ukyo",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "ezio": {
+      "name": "Ezio",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "prince-of-persia": {
+      "name": "Prince of Persia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "albedo": {
+      "name": "Albedo",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "ainz-ooal-gown": {
+      "name": "Ainz Ooal Gown",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "queen": {
+      "name": "QUEEN",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "joker": {
+      "name": "JOKER",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "merlin": {
+      "name": "Merlin",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "leonardo": {
+      "name": "Leonardo",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "melusina": {
+      "name": "Melusina",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "joan-of-arc": {
+      "name": "Joan of Arc",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "geralt": {
+      "name": "Geralt",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "yennefer": {
+      "name": "Yennefer",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "mulan": {
+      "name": "Mulan",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "emilia": {
+      "name": "Emilia",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "rem": {
+      "name": "Rem",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    },
+    "robin-hood": {
+      "name": "Robin Hood",
+      "ascended": "None",
+      "signature_item": 0,
+      "engrave": 0,
+      "furniture": 0,
+      "isMax": true
+    }
+  }
+}

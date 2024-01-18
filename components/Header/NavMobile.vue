@@ -5,12 +5,12 @@
 <template>
   <nav class="nav" :class="{'is-open': isNavOpen}">
     <ul class="nav-list">
-      <li>
-        <NuxtLink @click="isNavOpen = false" class="nav-link" to="/">Головна</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink @click="isNavOpen = false" class="nav-link" to="/heroes">Герої</NuxtLink>
-      </li>
+<!--      <li>-->
+<!--        <NuxtLink @click="isNavOpen = false" class="nav-link" to="/">Головна</NuxtLink>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <NuxtLink @click="isNavOpen = false" class="nav-link" to="/heroes">Герої</NuxtLink>-->
+<!--      </li>-->
       <!--      <li>-->
       <!--        <NuxtLink class="nav-link" to="/heroes">Beasts</NuxtLink>-->
       <!--      </li>-->

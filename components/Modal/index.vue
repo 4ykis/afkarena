@@ -1,35 +1,49 @@
 <script setup >
   const store = useModalStore()
-  const allowBodyScroll = useUtils().allowBodyScroll
-  const props = defineProps(['modalId', 'size']);
+  const props = defineProps([
+    'modalId',
+    'size',
+    'beforeOpen',
+    'beforeClose',
+    'afterClose'
+  ]);
+
+  const state = () => {
+    const val = store.getModalState(props.modalId)
+    useUtils().stopBodyScroll()
+    if (props.beforeOpen && val === true) props.beforeOpen()
+    return val
+  }
   const modalSize = () => {
    return `modal--${props.size || 'm'}`;
   }
 
   const closeModal = () => {
-    store.changeState(props.modalId)
-    allowBodyScroll()
+    if (props.beforeClose) props.beforeClose()
+    store.closeModal(props.modalId)
+    useUtils().allowBodyScroll()
+    if (props.afterClose) props.afterClose()
   }
 </script>
 
 <template>
-  <div class="modal" :class="modalSize()" :id="`modal-${modalId}`" v-if="store.getModalState(modalId)">
+  <div class="modal" :class="modalSize()" :id="`modal-${modalId}`" v-if="state()">
     <div class="modal-backdrop" @click.prevent="closeModal"></div>
-    <div class="modal-wrapper" >
-      <div class="modal-header">
-        <slot name="header"></slot>
+    <div class="modal-wrapper">
+      <div class="modal-header" v-if="$slots.header">
+        <slot name="header" :closeModal="closeModal"></slot>
 
         <IconClose
           @click.prevent="closeModal"
-          class="modal-close" />
+          class="modal-close"/>
       </div>
 
-      <div class="modal-content">
-        <slot name="content" />
+      <div class="modal-content" v-if="$slots.content">
+        <slot name="content" :closeModal="closeModal"/>
       </div>
 
       <div class="modal-footer " v-if="$slots.footer">
-        <slot name="footer" />
+        <slot name="footer" :closeModal="closeModal"/>
       </div>
     </div>
   </div>

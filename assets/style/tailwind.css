@@ -8,15 +8,28 @@
     -webkit-appearance: none;
     margin: 0;
   }
+	
+	html {
+		@apply font-serif font-medium tracking-wide
+	}
 }
-
 
 @layer components {
   .input {
     @apply bg-bg text-txt px-2 leading-8 h-10 rounded border border-theme-dark
-      focus:outline-0 focus:border-theme hover:border-theme duration-200 w-full
+      focus:outline-0 focus:border-theme hover:border-theme duration-200 transition-border w-full
   }
-
+	
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active{
+		
+		-webkit-box-shadow: 0 0 0 300px rgb(var(--color-bg)) inset !important;
+		-webkit-text-fill-color: rgb(var(--color-text)) !important;
+		color: rgb(var(--color-text)) !important;
+	}
+	
   .select {
     @apply bg-bg text-txt px-1 leading-8 h-10 rounded border border-theme-dark text-sm
       focus:outline-0 focus:border-theme hover:border-theme duration-200 cursor-pointer w-full
@@ -24,11 +37,16 @@
 
   .btn {
     @apply flex items-center justify-center h-10 bg-bg border border-theme-dark rounded
-      text-center text-txt duration-200 cursor-pointer hover:text-theme-light hover:border-theme;
+      text-center text-txt duration-200 cursor-pointer hover:text-theme-light hover:border-theme
+      focus:text-theme-light focus:border-theme focus:outline-0;
   }
 
   .nav-link {
-    @apply flex px-1 h-full items-center text-txt font-semibold duration-200 hover:text-theme-light
+    @apply flex font-sans px-1 h-full items-center text-txt font-semibold duration-200 hover:text-theme-light
   }
+	
+	.error {
+		@apply text-rose-500
+	}
 }
 
