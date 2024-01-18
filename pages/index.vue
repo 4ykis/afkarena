@@ -8,6 +8,8 @@
   const observer = ref(null);
   const heroes = ref(store.getHeroesData());
 
+  const img = await useCanvas().drawRoster(heroes.value);
+
   const bgClass = (id) => `hero-${id}`
   const setInputValue = (name, value = 0) => {
     if (name) {
@@ -28,6 +30,8 @@
   const submitForm = async (values) => {
     let formData = values;
     let resp;
+
+    store.updateHeroesData(formData)
 
     for (let f in formData) {
       for (let h in formData[f]) {
@@ -75,9 +79,16 @@
       return true;
     }
   }
+
+  const generate = () => {
+    const data = observer.value.getValues();
+    store.updateHeroesData(data);
+    store.openModal('roster');
+  }
 </script>
 
 <template>
+<!--  <img :src="img" alt="">-->
   <div class="container">
     <veeForm ref="observer" v-slot="{ setFieldValue, handleSubmit, values}" as="div">
       <form class="form relative" @submit="handleSubmit($event, submitForm)">
@@ -88,7 +99,7 @@
             </button>
           </div>
           <div class="form-action flex items-center gap-2 justify-end">
-            <Canvas :data="heroes" />
+            <button class="btn min-w-[165px]" type="button" @click="generate">Згенерувати</button>
             <button class="btn min-w-[165px]" type="submit">Зберегти</button>
           </div>
         </div>
@@ -181,7 +192,7 @@
                               @setVal="setInputValue"
                               :fieldName="`${faction}.${heroId}.engrave`"
                               :val="hero.engrave"
-                              :btnsArr="hero ? [30, 60, 80, 100] : [30, 60, 80]"
+                              :btnsArr="hero.isMax ? [30, 60, 80, 100] : [30, 60, 80]"
                           />
                         </veeField>
                       </template>
@@ -195,6 +206,8 @@
       </form>
     </veeForm>
   </div>
+
+  <ModalCanvasRoster />
 </template>
 
 

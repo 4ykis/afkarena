@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@vee-validate/rules": "^4.11.8",
+    "canvas": "^2.11.2",
     "uuid": "^9.0.1",
     "vee-validate": "^4.11.8"
   }

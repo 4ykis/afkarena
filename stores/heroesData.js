@@ -3,6 +3,7 @@ import heroesTemplate from '~/assets/data/heroesTemplate.json'
 export const useHeroesDataStore = defineStore('data',() => {
 	const data = {
 		template: heroesTemplate,
+		isUpdated: ref(null),
 		userHero: ref({...heroesTemplate})
 	}
 	function getHeroesData() {
@@ -12,5 +13,18 @@ export const useHeroesDataStore = defineStore('data',() => {
 		data.userHero.value = {...data.template, ...newData}
 	}
 
-	return { data, getHeroesData, updateHeroesData }
+	function setStatus(status) {
+		data.isUpdated = status;
+	}
+
+	function getStatus() {
+		return data.isUpdated;
+	}
+
+	async function getHeroesImage() {
+		console.log(data.userHero.value)
+		return await useCanvas().drawRoster(data.userHero.value)
+	}
+
+	return { data, getHeroesData, updateHeroesData, setStatus, getStatus, getHeroesImage }
 })

@@ -1,6 +1,6 @@
 
 
-export default defineNuxtRouteMiddleware(async (to, from) => {
+export default defineNuxtRouteMiddleware(async () => {
 	const TOKEN = useCookie('UserToken').value;
 	const isLogedIn = useCookie('isLogedIn').value;
 	const heroesStore = useHeroesDataStore()
@@ -20,7 +20,14 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
 			return false
 		}
 
-		heroesStore.updateHeroesData(resp.data.value)
+		heroesStore.setStatus(resp.data.value.is_updated)
+
+		const data = toRaw(resp.data.value)
+		delete data.is_updated;
+
+		// console.log(data);
+
+		heroesStore.updateHeroesData(data)
 	} else {
 		heroesStore.updateHeroesData({})
 	}

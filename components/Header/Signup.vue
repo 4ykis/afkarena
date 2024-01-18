@@ -1,18 +1,16 @@
 <script setup>
   const store = useModalStore()
   const heroesStore = useHeroesDataStore()
-  const stopBodyScroll = useUtils().stopBodyScroll;
-  const signOutUtil = useUtils().signOut;
   const isNavOpen = useIsNavOpen();
   const isLogedIn = useUtils().isLoged();
 
   const openModal = () => {
     store.changeState('authorization');
-    stopBodyScroll()
+    useUtils().stopBodyScroll();
   }
 
   const signOut = () => {
-    signOutUtil();
+    useUtils().signOut();
     heroesStore.updateHeroesData({});
 
     setTimeout(() => {

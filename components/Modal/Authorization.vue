@@ -72,4 +72,17 @@
   .auth-change-form {
     @apply block text-sm mt-4 text-center text-txt cursor-pointer hover:text-theme-light duration-200
   }
+
+  .modal-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .modal-leave-active {
+    transition: all 0.15s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+
+  .modal-enter-from,
+  .modal-leave-to {
+    opacity: 0;
+  }
 </style>

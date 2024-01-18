@@ -8,11 +8,16 @@
     'afterClose'
   ]);
 
+  let firstInit = true
+
   const state = () => {
-    const val = store.getModalState(props.modalId)
+
+    if (props.beforeOpen) {
+      props.beforeOpen()
+    }
+
     useUtils().stopBodyScroll()
-    if (props.beforeOpen && val === true) props.beforeOpen()
-    return val
+    return store.getModalState(props.modalId)
   }
   const modalSize = () => {
    return `modal--${props.size || 'm'}`;
@@ -27,26 +32,29 @@
 </script>
 
 <template>
-  <div class="modal" :class="modalSize()" :id="`modal-${modalId}`" v-if="state()">
-    <div class="modal-backdrop" @click.prevent="closeModal"></div>
-    <div class="modal-wrapper">
-      <div class="modal-header" v-if="$slots.header">
-        <slot name="header" :closeModal="closeModal"></slot>
+  <transition name="modal">
+    <div class="modal" :class="modalSize()" :id="`modal-${modalId}`" v-if="state()">
+        <div class="modal-backdrop" @click.prevent="closeModal"></div>
 
-        <IconClose
-          @click.prevent="closeModal"
-          class="modal-close"/>
-      </div>
+        <div class="modal-wrapper">
+        <div class="modal-header" v-if="$slots.header">
+          <slot name="header" :closeModal="closeModal"></slot>
 
-      <div class="modal-content" v-if="$slots.content">
-        <slot name="content" :closeModal="closeModal"/>
-      </div>
+          <IconClose
+            @click.prevent="closeModal"
+            class="modal-close"/>
+        </div>
 
-      <div class="modal-footer " v-if="$slots.footer">
-        <slot name="footer" :closeModal="closeModal"/>
+        <div class="modal-content" v-if="$slots.content">
+          <slot name="content" :closeModal="closeModal"/>
+        </div>
+
+        <div class="modal-footer " v-if="$slots.footer">
+          <slot name="footer" :closeModal="closeModal"/>
+        </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <style scoped>
@@ -101,5 +109,18 @@
     @apply absolute right-2 top-2;
     @apply w-8 h-8 ml-auto;
     @apply text-txt cursor-pointer hover:text-theme-light
+  }
+
+  .modal-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .modal-leave-active {
+    transition: all 0.15s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+
+  .modal-enter-from,
+  .modal-leave-to {
+    opacity: 0;
   }
 </style>
